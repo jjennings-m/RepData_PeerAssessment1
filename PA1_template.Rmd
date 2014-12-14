@@ -43,12 +43,12 @@ hist(steps$steps,
 ```{r}
 mean(steps$steps)
 ```
-**The mean = 10766**  
+<span style="color:red">**The mean = 10766**</span>  
 
 ```{r}
 median(steps$steps)
 ```
-**The median = 10765**  
+<span style="color:red">**The median = 10765**</span> 
 
 
 ### What is the average daily activity pattern?
@@ -85,11 +85,11 @@ interval$interval[which.max(interval$steps)]  # Find the interval with the most 
 sum(is.na(activity))
 ```
 
-**There are 2304 missing values in the dataset**
+<span style="color:red">**There are 2304 missing values in the dataset**</span>
 
 2.  Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
-**I will populate all NA values with the interval mean**
+<span style="color:red">**I will populate all NA values with the interval mean**</span>
 
 ```{r}
 imputed.activity <- activity  # Copy the activity data frame to a new one
@@ -120,12 +120,12 @@ hist(imputed.steps$steps,
 ```{r}
 mean(imputed.steps$steps)
 ```
-**The mean = 10766**  
+<span style="color:red">**The mean = 10766**</span>
 
 ```{r}
 median(imputed.steps$steps)
 ```
-**The median = 10765** 
+<span style="color:red">**The median = 10765*</span>
 
 ### Are there differences in activity patterns between weekdays and weekends?
 
@@ -152,4 +152,4 @@ for (day in c("weekend", "weekday")) {
 }
 ```
 
-**There is not a visible difference in activity patterns between weekdays and weekends.**
+<span style="color:red">**There is not a visible difference in activity patterns between weekdays and weekends.**</span>

@@ -71,7 +71,7 @@ mean(steps$steps)
 ```
 ## [1] 10766
 ```
-**The mean = 10766**  
+<span style="color:red">**The mean = 10766**</span>  
 
 
 ```r
@@ -81,7 +81,7 @@ median(steps$steps)
 ```
 ## [1] 10765
 ```
-**The median = 10765**  
+<span style="color:red">**The median = 10765**</span> 
 
 
 ### What is the average daily activity pattern?
@@ -143,11 +143,11 @@ sum(is.na(activity))
 ## [1] 2304
 ```
 
-**There are 2304 missing values in the dataset**
+<span style="color:red">**There are 2304 missing values in the dataset**</span>
 
 2.  Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
-**I will populate all NA values with the interval mean**
+<span style="color:red">**I will populate all NA values with the interval mean**</span>
 
 
 ```r
@@ -211,7 +211,7 @@ mean(imputed.steps$steps)
 ```
 ## [1] 10766
 ```
-**The mean = 10766**  
+<span style="color:red">**The mean = 10766**</span>
 
 
 ```r
@@ -221,7 +221,7 @@ median(imputed.steps$steps)
 ```
 ## [1] 10766
 ```
-**The median = 10765** 
+<span style="color:red">**The median = 10765*</span>
 
 ### Are there differences in activity patterns between weekdays and weekends?
 
@@ -252,4 +252,4 @@ for (day in c("weekend", "weekday")) {
 
 ![plot of chunk unnamed-chunk-21](./PA1_template_files/figure-html/unnamed-chunk-211.png) ![plot of chunk unnamed-chunk-21](./PA1_template_files/figure-html/unnamed-chunk-212.png) 
 
-**There is not a visible difference in activity patterns between weekdays and weekends.**
+<span style="color:red">**There is not a visible difference in activity patterns between weekdays and weekends.**</span>
